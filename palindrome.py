@@ -10,7 +10,7 @@ def menu(choice):
       case 3:
          print("Thank you for using this program")
       case default:
-         return "Enter a valid choice"
+         print("Enter a valid choice")
 
 def is_palindrome(str):
    return str==str[::-1]
@@ -21,7 +21,8 @@ def factorial(num):
       ans *= i
    return ans
 
-while True:
+choice = 1
+while choice!=3:
    print("1. Check palindrome")
    print("2. Find factorial")
    print("3. Exit")
